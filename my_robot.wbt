@@ -1,0 +1,60 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/CorrugatedMetal.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/conveyors/protos/ConveyorBelt.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/containers/protos/MetalStorageBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/containers/protos/CardboardBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/universal_robots/protos/UR5e.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.12668468279116857 0.48521232168292355 0.8651704999785698 0.5862005273805513
+  position -7.924663792245317 -5.444932099903506 3.872918903157818
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+MetalStorageBox {
+  name "metal storage box(2)"
+  translation 2.49918 -1.8 0
+  rotation 0 0 1 1.57
+}
+UR5e {
+  hidden position_0_0 7.039182604862138e-17
+  hidden position_1_0 5.717604670252695e-05
+  hidden rotation_2 0 0.9999999999999999 0 1.570853176046703
+  hidden position_2_0 1.585877966133518e-05
+  hidden rotation_3 0 1 0 1.5858784386443486e-05
+  hidden position_3_0 -2.6231825305760964e-10
+  hidden rotation_4 0 0.9999999999999999 0 1.5707959997376817
+  hidden position_4_0 4.082884020959396e-11
+  hidden position_5_0 9.781112958419033e-19
+  translation 1.5 -0.4 0.6
+}
+CardboardBox {
+  translation 1.46 -0.39 0.3
+}
+MetalStorageBox {
+  name "metal storage box(1)"
+  translation 2.5 0 0
+  rotation 0 0 1 1.57
+}
+MetalStorageBox {
+  translation 2.5 -0.9 0
+  rotation 0 0 1 1.57
+}
+ConveyorBelt {
+  hidden translation_1 0 0 0.3749372626100174
+  translation 0 1 0
+  size 6 0.5 0.5
+}
+RectangleArena {
+  floorSize 7 6
+  floorAppearance CorrugatedMetal {
+  }
+}
