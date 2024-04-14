@@ -8,16 +8,41 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/containers/protos/MetalStorageBox.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/containers/protos/CardboardBox.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/universal_robots/protos/UR5e.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/fruits/protos/Orange.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/fruits/protos/Apple.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/balls/protos/PingPongBall.proto"
 
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.12668468279116857 0.48521232168292355 0.8651704999785698 0.5862005273805513
-  position -7.924663792245317 -5.444932099903506 3.872918903157818
+  orientation -0.17987252524976804 0.636550869901995 0.7499659090167264 0.7206799018089578
+  position -7.7086680900528 -5.247278157861578 4.2879567690981535
 }
 TexturedBackground {
 }
 TexturedBackgroundLight {
+}
+Orange {
+  translation -0.3 0.98975 0.55
+  rotation 0.0039208003706409904 0.9999903620112786 -0.0019756540702590784 -2.8061123777102965
+  name "orange(3)"
+}
+Orange {
+  translation -1.50381 0.991818 0.55
+  rotation 0.0039208003706409904 0.9999903620112786 -0.0019756540702590784 -2.8061123777102965
+  name "orange(2)"
+}
+Orange {
+  translation -1.18291 0.989007 0.55
+  rotation 0.0039208003706409904 0.9999903620112786 -0.0019756540702590784 -2.8061123777102965
+  name "orange(1)"
+}
+Apple {
+  translation -0.54 0.95 0.55
+}
+Orange {
+  translation -2.01048 0.996316 0.55
+  rotation 0.0039208003706409904 0.9999903620112786 -0.0019756540702590784 -2.8061123777102965
 }
 MetalStorageBox {
   name "metal storage box(2)"
@@ -25,16 +50,20 @@ MetalStorageBox {
   rotation 0 0 1 1.57
 }
 UR5e {
-  hidden position_0_0 7.039182604862138e-17
-  hidden position_1_0 5.717604670252695e-05
-  hidden rotation_2 0 0.9999999999999999 0 1.570853176046703
-  hidden position_2_0 1.585877966133518e-05
-  hidden rotation_3 0 1 0 1.5858784386443486e-05
-  hidden position_3_0 -2.6231825305760964e-10
-  hidden rotation_4 0 0.9999999999999999 0 1.5707959997376817
-  hidden position_4_0 4.082884020959396e-11
-  hidden position_5_0 9.781112958419033e-19
+  hidden position_0_0 -9.541519295190492e-05
+  hidden rotation_1 0 0 -0.9999999999999999 9.541519188192064e-05
+  hidden position_1_0 0.00011435342154982456
+  hidden rotation_2 0 1 0 1.5709103534215498
+  hidden position_2_0 3.172219743699724e-05
+  hidden rotation_3 0 1 0 3.172220288592142e-05
+  hidden position_3_0 -6.530644103805266e-06
+  hidden rotation_4 0 1 0 1.5707894690935778
+  hidden position_4_0 4.1107089867559397e-07
+  hidden rotation_5 0 0 1 4.107966647175028e-07
+  hidden position_5_0 -4.11418567392269e-07
+  hidden rotation_6 0 -0.9999999999999999 0 4.1187628987685676e-07
   translation 1.5 -0.4 0.6
+  controller "<none>"
 }
 CardboardBox {
   translation 1.46 -0.39 0.3
@@ -49,7 +78,10 @@ MetalStorageBox {
   rotation 0 0 1 1.57
 }
 ConveyorBelt {
-  hidden translation_1 0 0 0.3749372626100174
+  hidden translation_1 5.217583869424386e-12 4.1744385725905886e-14 0.37491921221004954
+  hidden rotation_1 0.00806073162258999 -0.9999675117751119 2.6976767668136158e-11 3.0480958725374898e-06
+  hidden linearVelocity_1 -6.596669453902676e-13 -3.9972965805333216e-15 -4.490630090003833e-15
+  hidden angularVelocity_1 -2.7358614537866055e-09 3.931819344514517e-07 6.45835325370077e-16
   translation 0 1 0
   size 6 0.5 0.5
 }
@@ -57,4 +89,7 @@ RectangleArena {
   floorSize 7 6
   floorAppearance CorrugatedMetal {
   }
+}
+PingPongBall {
+  translation 0.11 0.96 0.55
 }
